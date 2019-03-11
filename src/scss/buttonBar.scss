@@ -1,0 +1,25 @@
+$color-button-inactive: grey !default;
+$color-button-active: black !default;
+$button-min-width: 120px !default;
+
+.buttonBar {
+    display: flex;
+}
+
+.buttonBar-button {
+    @include resp(padding, (phone: 10px, tablet: 22px));
+    @include resp(height, (phone: 42px, tablet: 65px));
+
+    min-width: $button-min-width;
+    flex-grow: 1;
+    border: 1px solid $color-button-inactive;
+    color: $color-button-inactive;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttonBar-button-isSelected {
+    border: 1px solid $color-button-active;
+    color: $color-button-active;
+}
