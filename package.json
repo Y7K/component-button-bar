@@ -1,6 +1,6 @@
 {
     "name": "@y7k/component-button-bar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Vue group of buttons connected to each other, where only one can be selected",
     "main": "src/js/main.js",
     "scripts": {
